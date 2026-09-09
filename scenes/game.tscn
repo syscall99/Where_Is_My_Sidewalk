@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cf6l3m3kqiab3"]
+
+[ext_resource type="Texture2D" uid="uid://doghmovcgeltw" path="res://assets/graphics/map.png" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://ccmoywxrql52f" path="res://scenes/player.tscn" id="2_yqjtg"]
+
+[node name="Game" type="Node2D" unique_id=1702801374]
+metadata/_edit_horizontal_guides_ = [0.0, 2.0]
+metadata/_edit_vertical_guides_ = [0.0, -192.0, 192.0]
+
+[node name="Map" type="Sprite2D" parent="." unique_id=1953152497]
+position = Vector2(192, 320)
+texture = ExtResource("1_uwrxv")
+
+[node name="Player" parent="." unique_id=691775606 instance=ExtResource("2_yqjtg")]
+position = Vector2(213, 366)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1258154016]
+zoom = Vector2(4, 4)
+limit_left = 0
+limit_top = 0
+limit_right = 384
+limit_bottom = 640
+position_smoothing_enabled = true
+position_smoothing_speed = 20.0
