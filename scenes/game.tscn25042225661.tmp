@@ -37,8 +37,6 @@ position = Vector2(192, 320)
 texture = ExtResource("1_uwrxv")
 
 [node name="GameBoundry" type="StaticBody2D" parent="." unique_id=1477813637]
-collision_layer = 8
-collision_mask = 0
 
 [node name="CollisionShape2D1" type="CollisionShape2D" parent="GameBoundry" unique_id=1484387412]
 position = Vector2(192, 0)
@@ -59,8 +57,6 @@ position = Vector2(192, 641)
 shape = SubResource("RectangleShape2D_uk0u6")
 
 [node name="FinishLine" type="Area2D" parent="." unique_id=1503823434]
-collision_layer = 0
-collision_mask = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FinishLine" unique_id=557388490]
 position = Vector2(190, 57)
@@ -74,33 +70,32 @@ autostart = true
 [node name="SpawnCarRight" type="Node2D" parent="." unique_id=396558278]
 
 [node name="Marker2D" type="Marker2D" parent="SpawnCarRight" unique_id=1457937756]
-position = Vector2(387, 295)
+position = Vector2(387, 296)
 
 [node name="Marker2D3" type="Marker2D" parent="SpawnCarRight" unique_id=702965574]
-position = Vector2(386, 225)
+position = Vector2(386, 227)
 
 [node name="Marker2D4" type="Marker2D" parent="SpawnCarRight" unique_id=895798572]
-position = Vector2(386, 202)
+position = Vector2(386, 205)
 
 [node name="Marker2D5" type="Marker2D" parent="SpawnCarRight" unique_id=520015787]
-position = Vector2(387, 322)
+position = Vector2(387, 324)
 
 [node name="Marker2D6" type="Marker2D" parent="SpawnCarRight" unique_id=1147657555]
-position = Vector2(386, 482)
+position = Vector2(386, 485)
 
 [node name="Marker2D7" type="Marker2D" parent="SpawnCarRight" unique_id=661015996]
-position = Vector2(386, 434)
+position = Vector2(386, 435)
 
 [node name="SpawnCarLeft" type="Node2D" parent="." unique_id=63242047]
 
 [node name="Marker2D9" type="Marker2D" parent="SpawnCarLeft" unique_id=391953990]
-position = Vector2(-2, 266)
+position = Vector2(-2, 268)
 
 [node name="Marker2D2" type="Marker2D" parent="SpawnCarLeft" unique_id=597305437]
-position = Vector2(-2, 459)
+position = Vector2(-2, 460)
 
 [node name="Marker2D8" type="Marker2D" parent="SpawnCarLeft" unique_id=1961563793]
-position = Vector2(-3, 411)
+position = Vector2(-3, 413)
 
-[connection signal="body_entered" from="FinishLine" to="." method="_on_finish_line_body_entered"]
 [connection signal="timeout" from="Timers/SpawnCarTimer" to="." method="_on_spawn_car_timer_timeout"]
