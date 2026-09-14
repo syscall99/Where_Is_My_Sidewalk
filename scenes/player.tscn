@@ -94,7 +94,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
-size = Vector2(10, 8.5)
+size = Vector2(10, 7)
 
 [node name="Player" type="CharacterBody2D" unique_id=1145718649]
 collision_layer = 2
@@ -109,4 +109,5 @@ frame = 3
 frame_progress = 0.9000975
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=502662448]
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_g2els")

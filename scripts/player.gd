@@ -5,7 +5,7 @@ const SPEED: int = 50
 
 var direction: Vector2 = Vector2.ZERO
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 
 	velocity = direction * SPEED
