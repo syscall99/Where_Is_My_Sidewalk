@@ -16,7 +16,7 @@ config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [audio]
 
-buses/default_bus_layout=""
+buses/default_bus_layout="uid://bfady7yw3imr0"
 
 [autoload]
 

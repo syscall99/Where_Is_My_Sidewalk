@@ -10,8 +10,9 @@ var colors = [
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
 
+
 func _ready() -> void:
-		$Sprite2D.texture = colors.pick_random()
+	$Sprite2D.texture = colors.pick_random()
 
 func _process(delta: float) -> void:
 	position += direction * SPEED * delta
