@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://owg7bdgtroi0"]
+
+[ext_resource type="FontFile" uid="uid://dr201ov4c76pb" path="res://assets/fonts/Crackman.otf" id="1_4ignj"]
+[ext_resource type="Script" uid="uid://d20nxy82yt5jl" path="res://scripts/title.gd" id="1_pyl7j"]
+[ext_resource type="Texture2D" uid="uid://bkgrir378horu" path="res://assets/graphics/player/player_simple.png" id="2_wosw1"]
+[ext_resource type="FontFile" uid="uid://hqpa84d2dqvp" path="res://assets/fonts/Better VCR 9.0.1.ttf" id="3_p6dhs"]
+
+[node name="Title" type="Control" unique_id=1392038100]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pyl7j")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1084639234]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3882353, 0.23529412, 0.39607844, 1)
+
+[node name="GameTitle" type="Label" parent="." unique_id=1177320057]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -479.0
+offset_top = -48.5
+offset_right = 479.0
+offset_bottom = -250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_4ignj")
+theme_override_font_sizes/font_size = 80
+text = "Where's My Sidewalk?"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1233782644]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_wosw1")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=1189300693]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.5
+offset_top = 240.0
+offset_right = 53.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_p6dhs")
+theme_override_font_sizes/font_size = 30
+text = "High Score: ---"
